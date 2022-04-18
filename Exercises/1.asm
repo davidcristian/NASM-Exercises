@@ -114,7 +114,7 @@ segment code use32 class=code
         call [fopen]
         add esp, 4*2 ; open the output file in write mode
         
-        mov [output_descriptor], eax ;opens the output file and stores the descriptor in output_descriptor
+        mov [output_descriptor], eax ; open the output file and store the descriptor in output_descriptor
         
         push dword content
         push dword [output_descriptor]
